@@ -31,7 +31,7 @@ if st.button("Predict"):
     }
 
     try:
-        response = requests.post("http://127.0.0.1:8000/predict/", json=input_data)
+        response = requests.post("https://customer-ltv-estimator-api.onrender.com/predict/", json=input_data)
         result = response.json()
 
         churn = result["churn_prediction"]
