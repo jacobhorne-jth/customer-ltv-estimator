@@ -1,0 +1,11 @@
+fastapi
+joblib
+jupyter
+jupyterlab
+matplotlib
+numpy
+pandas
+pydantic
+scikit-learn
+streamlit
+uvicorn
