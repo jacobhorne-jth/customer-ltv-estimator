@@ -17,7 +17,7 @@ services:
       - 10000
 
   - type: web
-    name: streamlit-frontend
+    name: customer-ltv-estimator-demo
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "streamlit run app.py --server.port 10001 --server.address 0.0.0.0"
