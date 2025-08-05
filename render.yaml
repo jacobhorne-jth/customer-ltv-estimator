@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: fastapi-backend
+    name: customer-ltv-estimator-api
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn scripts.churn_ltv_api:app --host 0.0.0.0 --port 10000"
