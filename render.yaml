@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: fastapi-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn scripts.churn_ltv_api:app --host 0.0.0.0 --port 10000"
+    plan: free
+    runtime: python
+    region: oregon
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /docs
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+    ports:
+      - 10000
+
+  - type: web
+    name: streamlit-frontend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run app.py --server.port 10001 --server.address 0.0.0.0"
+    plan: free
+    runtime: python
+    region: oregon
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+    ports:
+      - 10001
