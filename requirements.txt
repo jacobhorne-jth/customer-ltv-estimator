@@ -8,4 +8,5 @@ pandas
 pydantic
 scikit-learn
 streamlit
+requests
 uvicorn
