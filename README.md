@@ -13,6 +13,8 @@ respond while the server wakes up. Subsequent requests will be much faster.
 - Frontend: https://customer-ltv-estimator-demo.onrender.com
 - Backend API: https://customer-ltv-estimator-api.onrender.com/predict
 
+**Note:** This project was completed `Feb 2025`; the code was developed locally and pushed in one batch to GitHub (not committed sequentially during development).
+
 ---
 
 **Features**
@@ -134,3 +136,4 @@ This project is licensed under the MIT License.
 **Acknowledgments**
 - UCI Online Retail Dataset
 - scikit-learn, FastAPI, Streamlit, Render for making full-stack ML deployment accessible
+
